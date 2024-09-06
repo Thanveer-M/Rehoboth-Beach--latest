@@ -1,0 +1,15 @@
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Trash" clip-path="url(#clip0_2726_731)">
+<path id="Vector" opacity="0.2" d="M43.7498 12.25V45.5C43.7498 45.9641 43.5654 46.4092 43.2372 46.7374C42.909 47.0656 42.4639 47.25 41.9998 47.25H13.9998C13.5356 47.25 13.0905 47.0656 12.7623 46.7374C12.4341 46.4092 12.2498 45.9641 12.2498 45.5V12.25H43.7498Z" fill="#D14619"/>
+<path id="Vector_2" d="M47.2498 12.25H8.74976" stroke="#D14619" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M22.7498 22.75V36.75" stroke="#D14619" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M33.2498 22.75V36.75" stroke="#D14619" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M43.7498 12.25V45.5C43.7498 45.9641 43.5654 46.4092 43.2372 46.7374C42.909 47.0656 42.4639 47.25 41.9998 47.25H13.9998C13.5356 47.25 13.0905 47.0656 12.7623 46.7374C12.4341 46.4092 12.2498 45.9641 12.2498 45.5V12.25" stroke="#D14619" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_6" d="M36.7498 12.25V8.75C36.7498 7.82174 36.381 6.9315 35.7246 6.27513C35.0683 5.61875 34.178 5.25 33.2498 5.25H22.7498C21.8215 5.25 20.9313 5.61875 20.2749 6.27513C19.6185 6.9315 19.2498 7.82174 19.2498 8.75V12.25" stroke="#D14619" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_2726_731">
+<rect width="56" height="56" fill="white" transform="translate(-0.000244141)"/>
+</clipPath>
+</defs>
+</svg>

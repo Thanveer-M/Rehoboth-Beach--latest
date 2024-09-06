@@ -1,0 +1,13 @@
+<svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Waves" clip-path="url(#clip0_531_8521)">
+<path id="Vector" opacity="0.2" d="M8.9502 16.1022C24.7002 3.04501 31.7002 28.455 47.4502 15.3978V39.8978C31.7002 52.955 24.7002 27.545 8.9502 40.6022V16.1022Z" fill="#D14619"/>
+<path id="Vector_2" d="M8.9502 40.6022C24.7002 27.545 31.7002 52.955 47.4502 39.8978" stroke="#D14619" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M8.9502 28.3522C24.7002 15.295 31.7002 40.705 47.4502 27.6478" stroke="#D14619" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M8.9502 16.1022C24.7002 3.04501 31.7002 28.455 47.4502 15.3978" stroke="#D14619" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_531_8521">
+<rect width="56" height="56" fill="white" transform="translate(0.200195)"/>
+</clipPath>
+</defs>
+</svg>
