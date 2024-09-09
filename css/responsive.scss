@@ -343,7 +343,10 @@
              .month_form, 
              .year_form,
              select.form-control.month_select,
-             select.form-control.year_select 
+             select.form-control.year_select,
+             select.form-control,
+             .sort_form,
+             .form_filter
               {
                 max-width: 100%;
                 min-width: 100%;
@@ -374,6 +377,14 @@
                 }
             }
         }
+    }
+    .news_filter .form_left_wraper, .agd_filter .form_left_wraper {
+        align-items: flex-start;
+    }
+    .list_grid_wraper {
+        width: 100%;
+        justify-content: flex-end;
+        display: flex;
     }
     .site_img_panel {}
     .top-Title {
@@ -419,7 +430,7 @@
         }
     }
     .footer::before {
-        top: -45px;
+        top: -40px;
         left: 0px;
         background-size: contain;
     }
@@ -654,7 +665,8 @@
     }
     .news_filter .form_left_wraper .form_filter,
     .news_filter .search_input,
-    .news_filter .sort_form {
+    .news_filter .sort_form,
+    .agd_filter .search_input {
         max-width: 100%;
         min-width: 100%;
     }
@@ -731,6 +743,9 @@
     .button_ico_col {
         flex: 0 0 48%;
         max-width: 48%;
+    }
+    .page_main_title_wraper{
+        padding: 48px 16px;
     }
 }
 
@@ -1178,7 +1193,7 @@
         width: 100%;
     }
     .main_wrapper {
-        padding-top: 90px;
+        padding-top: 70px;
     }
     .plus-minus::after {}
     .main_header .plus-minus {

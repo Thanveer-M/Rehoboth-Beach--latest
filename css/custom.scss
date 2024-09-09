@@ -38,6 +38,7 @@ h1,
     font-weight: 600;
     color: $tertiary;
     font-family: $primary-font;
+    line-height: 40px;
 }
 
 h2,
@@ -46,6 +47,7 @@ h2,
     font-weight: 500;
     color: $black;
     font-family: $primary-font;
+    line-height: 40px;
 }
 
 h3,
@@ -68,8 +70,9 @@ h5,
 .h5 {
     font-size: 16px;
     font-weight: 700;
-    color: $gray;
+    color: $dark;
     font-family: $secondary-font;
+    line-height: 28px;
 }
 
 h6,
@@ -126,7 +129,10 @@ b,
 strong {
     font-weight: 700;
 }
-
+.no-padding{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
 //general rules
 .container-fluid {
     padding-left: 40px;
@@ -155,15 +161,18 @@ strong {
 }
 .cst_scrollbar{
 &::-webkit-scrollbar {
-    width: 10px;
+    width: 16px;
   }
   
   &::-webkit-scrollbar-track {
-    background: #D1CECE; 
+    background: #EDEFF0;
+    border: solid 1px #B3B3B3; 
+    border-radius: 50px;
   }
    
   &::-webkit-scrollbar-thumb {
-    background: $tertiary; 
+    background: $primary; 
+    border-radius: 50px;
   }
 //   &::-webkit-scrollbar-thumb:hover {
 //     background: #555; 
@@ -217,7 +226,7 @@ span.date {
     font-size: 15px;
     display: block;
     margin-bottom: 10px;
-    font-family: $primary-font;
+    font-family: $secondary-font;
 }
 
 .container {
@@ -1461,7 +1470,7 @@ label.title {
                     &:hover {
                         
                         img{
-                            filter: brightness(0) saturate(100%) invert(86%) sepia(12%) saturate(1104%) hue-rotate(350deg) brightness(102%) contrast(107%);
+                            filter: brightness(0) saturate(100%) invert(82%) sepia(7%) saturate(2164%) hue-rotate(346deg) brightness(113%) contrast(101%);
                         }
                     }
                     .menu-image-title {
@@ -1796,7 +1805,7 @@ label.title {
 }
 
 .general_carousel {
-    margin-top: 24px;
+    margin-top: 0px;
     margin-bottom: 24px;
     .caption-carousel {
         padding-top: 8px;
@@ -2236,18 +2245,15 @@ label.title {
 
 //Icon buttons
 .icon_buttons_row {
-    column-gap: 24px;
     display: flex;
     a:hover {
         text-decoration: none;
     }
     .button_ico_col {
-        flex: 0 0 calc(20% - 24px);
-    max-width: calc(20% - 24px);
+        flex: 0 0 calc(20% - 0px);
+    max-width: calc(20% - 0px);
     box-sizing: border-box;
     margin-bottom: 24px;
-    padding-left: 0px;
-    padding-right: 0px;
         a{
             text-decoration: none;
             &:hover{
@@ -2260,8 +2266,8 @@ label.title {
     }
     &.four_column{
         .button_ico_col {
-            flex: 0 0 calc(25% - 16px);
-        max-width: calc(25% - 16px);
+            flex: 0 0 calc(25% - 0px);
+        max-width: calc(25% - 0px);
         }
     }
 }
@@ -3342,19 +3348,22 @@ margin-bottom: 16px;
 
 //Department Directory
 .directory_wrap {
-    padding-top: 0px;
+    padding-top: 80px;
     padding-bottom: 40px;
     @include desk {
-        .left_col {
-            -ms-flex: 0 0 30%;
-            flex: 0 0 30%;
-            max-width: 30%;
-        }
+        // .left_col {
+        //     -ms-flex: 0 0 30%;
+        //     flex: 0 0 30%;
+        //     max-width: 30%;
+        // }
         .right_col {
-            -ms-flex: 0 0 70%;
-            flex: 0 0 70%;
-            max-width: 70%;
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
         }
+    }
+    .container{
+        max-width: 1000px;
     }
 }
 
@@ -3453,6 +3462,9 @@ margin-bottom: 16px;
     }
     section {
         padding: 40px 0px;
+        .title_bottom{
+            margin-bottom: 24px;
+        }
     }
     section+section {
         padding-top: 0px;
@@ -3476,10 +3488,11 @@ margin-bottom: 16px;
             padding-bottom: 0px;
             height: 208px;
             background: $primary;
+            h3{
+                color: $text-white !important;
+            }
         }
-        h3{
-            color: $text-white !important;
-        }
+       
         p{
             margin-bottom: 0px;
             color: $text-white;
@@ -3489,7 +3502,8 @@ margin-bottom: 16px;
 
 .dp_sidebar {}
 
-.dpt_profile_card {
+.dpt_profile_card,
+.dpt_map_card {
     margin-bottom: 16px;
     border-radius: 0px 0px 5px 5px;
     background: $light;
@@ -3566,6 +3580,17 @@ margin-bottom: 16px;
         }
     }
 }
+.dpt_map_card{
+    padding: 0px 0px;
+    .dpt_profile_content{
+        padding: 24px 24px;
+    }
+    .dpt_map_wraper{
+        img{
+            border-radius: 24px 24px 0px 0px;
+        }
+    }
+}
 
 .dp_news_area {
     h2 {
@@ -3601,7 +3626,10 @@ margin-bottom: 16px;
 
 //News page
 .news_wraper {
-    padding: 80px 40px 40px;
+    padding-top: 80px;
+ .container{
+    max-width: 1200px;
+ }
 }
 .filter_box{
     
@@ -3668,15 +3696,17 @@ margin-bottom: 16px;
 }
 
 .news_category {
-    font-weight: 700;
-    position: absolute;
-    background: $lightblue;
-    font-size: 15px;
-    font-family: $primary-font;
-    color: $black;
+    font-weight: 400;
+    background: $secondary;
+    font-size: 16px;
+    font-family: $secondary-font;
+    color: $dark;
     bottom: 0px;
     left: 0px;
     padding: 8px 16px;
+    border-radius: 24px 24px 0px 0px;
+    text-align: center;
+    line-height: 24px;
 }
 
 .newsinfo {
@@ -3686,10 +3716,6 @@ margin-bottom: 16px;
 }
 
 .newsRow {
-    margin-left: 0px;
-    margin-right: 0px;
-    flex-wrap: nowrap;
-    column-gap: 24px;
     .newsColumn {
         margin-bottom: 30px;
         display: flex;
@@ -3731,10 +3757,11 @@ margin-bottom: 16px;
     background: $white;
     // box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
     h3 {
-        margin-bottom: 6px;
-        font-size: 21px;
-        color: $black;
-        font-weight: 700;
+        margin-bottom: 16px;
+        font-size: 20px;
+        color: $dark;
+        font-weight: 600;
+        font-family: $secondary-font;
     }
     >a {
         text-decoration: none;
@@ -3742,12 +3769,11 @@ margin-bottom: 16px;
     &:hover {
         h3 {
             text-decoration: underline;
-            color: $primary;
         }
     }
     &.no-img {}
     .date {
-        margin-bottom: 10px;
+        margin-bottom: 16px;
         display: block;
     }
 }
@@ -3796,10 +3822,13 @@ margin-bottom: 16px;
     }
 }
 .newsBody {
-    padding: 15px 0px 0px 0px; 
+    padding: 24px 24px; 
+    background: $cream;
+    border-radius: 0px 0px 24px 24px;
     .newsbody_inner{
         p{
             margin-bottom: 0px;
+            line-height: 24px;
         }
     }
 }
@@ -4010,16 +4039,18 @@ margin-bottom: 16px;
 
 //News Details
 .news_detail {
-    padding-bottom: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     .container {
         max-width: 900px;
     }
     .category,
     .date {
-        font-size: 15px;
-        font-weight: 700;
-        color: $black;
+        font-size: 16px;
+        font-weight: 400;
+        color: $dark;
         margin-bottom: 10px;
+        line-height: 24px;
     }
     .date{
         margin-bottom: 24px;
@@ -4104,6 +4135,39 @@ margin-bottom: 16px;
             }
             &:hover {
                 background: #E9EEF5;
+            }
+        }
+    }
+    .news_dt_banner{
+        margin-bottom: 24px;
+        img{
+            border-radius: 24px;
+        }
+    }
+    .news-dt-content{
+        h2{
+            color: $primary;
+            font-size: 30px;
+            line-height: 40px;
+        }
+        h3{
+            color: $tertiary;
+            line-height: 28px;
+            margin-bottom: 32px;
+        }
+        h4{
+            line-height: 24px;
+        }
+        .quote_para{
+            padding: 24px 24px;
+            p{
+                margin-bottom: 8px;
+                em{
+                    font-weight: 500;
+                }
+            }
+            &.no-padding{
+                padding: 0px;
             }
         }
     }
@@ -5285,7 +5349,7 @@ body .is-layout-constrained>.wp-block-group {
     align-items: center;
     width: 100%;
     justify-content: center;
-    margin-top: 24px;
+    margin-top: 0px;
     a,
     span {
         border: 0;
@@ -6771,6 +6835,7 @@ h2{
         font-weight: 600;
         line-height: 28px;
         color: $dark;
+        margin-bottom: 0px;
     }
 }
 }
@@ -7042,24 +7107,19 @@ h2{
         display: flex;
         margin-left: 0px;
         padding-left: 0px;
-        column-gap: 8px;
+        column-gap: 16px;
         margin-bottom: 0px;
         li{
             list-style-type: none;
             a{
-                width: 32px;
-                height: 32px;
-                min-width: 32px;
-                min-height: 32px;
-                padding: 8px;
+                width: 24px;
+                height: 24px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 border-radius: 100px;
-                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-                background-color: #ffffff;
                 &:hover {
-                    background: #DCDCDC !important;
+
                 }
             }
         }
@@ -7070,7 +7130,7 @@ h2{
     }
 }
 .calendar_section{
-    padding: 80px 80px !important;
+    padding: 80px 0px !important;
     margin-top: 0px !important;
     margin-bottom: 0px !important;
 }
@@ -7151,11 +7211,15 @@ h2{
             object-fit: cover;
         }
     }
+    &.city_map_sec{
+        .cont_info{
+        overflow-y: auto;
+        }
+    }
 }
 .cont_info{
     padding: 40px 40px;
     max-height: 540px;
-    overflow-y: auto;
     h3{
         font-size: 30px;
         font-weight: 500;
@@ -7286,34 +7350,54 @@ h2{
     ul{
         display: flex;
         flex-direction: column;
-        row-gap: 8px;
+        row-gap: 24px;
         padding-left: 0px;
         padding-right: 0px;
         li{
             display: flex;
-            background: $white;
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
-            align-items: center;
-            justify-content: space-between;
+            background: $light;
+            border: 1px solid $light;
             padding: 16px 16px;
-            border-radius: 5px;
+            border-radius: 8px;
             @include transition-bg;
+            flex-direction: column;
+            row-gap: 8px;
+            div{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                align-items: center;
+                p{
+                    max-width: 70%;
+                }
+            }
+            p{
+                margin-bottom: 0px;
+            }
+            a{
+                text-decoration: none;
+            }
             &:hover{
-                background: $primary;
+                background: $light;
+                box-shadow: 0px 4px 4px 0px rgba(135, 135, 135, 0.80);
+                border: 1px solid $light-red;
                 @include transition-bg;
                 h2,
                 span,
-                a{
-                    color: $white;
+                a,
+                p{
+                    text-decoration: none
+                }
+                img{
                 }
             }
             h2{
-                font-size: 21px;
+                font-size: 18px;
                 font-family: $primary-font;
                 font-weight: 700;
-                line-height: normal;
+                line-height: 24px;
                 margin-bottom: 0px;
-                color: $tertiary;
+                color: $dark;
             }
             .right{
                 display: flex;
@@ -7926,7 +8010,7 @@ section.event_section{
     padding: 48px 120px;
     .main_title_wraper{
         width: 100%;
-        height: 88px;
+        // height: 88px;
         background: linear-gradient(90deg, rgba(242, 242, 234, 0.90) 50%, rgba(242, 242, 234, 0.25) 65%, rgba(242, 242, 234, 0.10) 100%);
         backdrop-filter: blur(2px);
         border-radius: 24px;
@@ -7967,6 +8051,7 @@ section.event_section{
     background: $primary;
     border-radius: 24px;
     padding: 40px;
+    margin-top: 40px;
     .newsletter_form_wraper{
         
         form{
@@ -8500,5 +8585,38 @@ section.event_section{
         background-position: top 13px right 8px;
         background-size: 32px;
         background-repeat: no-repeat;
+    }
+}
+.amenties_wraper{
+    h3{
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .amenties_icons_wraper{
+        display: flex;
+        column-gap: 16px;
+    }
+    .amenties_icons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 84px;
+        word-break: break-word;
+        text-align: center;
+        .amenties_icons_text{
+            max-width: 66px;
+            min-width: 66px;
+            font-size: 14px;
+        }
+    }
+    .amenties_icons_img{
+        width: 40px;
+        height: 40px;
+        border: solid 1px $dark;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
